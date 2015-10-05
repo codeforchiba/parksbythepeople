@@ -1,0 +1,19 @@
+{
+  "name": "parksbythepeople-lp",
+  "version": "0.0.0",
+  "description": "Landing Page for Parks by the people",
+  "authors": [
+    "URAMOTO Kazunori <uramoto@wasoo.net>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "sanitize-css": "~1.1.0"
+  }
+}

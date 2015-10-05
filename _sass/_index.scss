@@ -1,0 +1,542 @@
+#index {
+  section.content {
+    position: relative;
+    z-index: 10;
+
+    h1 {
+      color: $moegi-color;
+
+      font-size: 18pt;
+      font-weight: 300;
+    }
+
+    &.covered {
+      background-color: $white-color;
+      background-size: cover;
+
+      width: 100%;
+    }
+
+    @include respond-to(wide-screen) {
+      h1 {
+        font-size: 24pt;
+      }
+    }
+
+    @include respond-to(smartphone) {
+    }
+
+    &#header {
+      background-image: url("/images/header.jpg");
+      height: 300px;
+
+      h1 {
+        position: absolute;
+        bottom: 22px;
+
+        width: 100%;
+
+        height: 60px;
+        line-height: 60px;
+
+        text-align: center;
+
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+
+      @include respond-to(wide-screen) {
+        height: 700px;
+
+        h1 {
+          left: 0;
+          bottom: 50px;
+
+          width: 514px;
+
+          height: 92px;
+          line-height: 92px;
+
+          padding-right: 36px;
+
+          font-size: 34pt;
+          text-align: right;
+        }
+      }
+
+      @include respond-to(tablet) {
+        height: 400px;
+      }
+
+      @include respond-to(smartphone) {
+        h1 {
+          font-size: 22pt;
+        }
+      }
+    }
+
+    &#description {
+      background-color: $aotake-color;
+
+      width: 100%;
+      padding: 40px 0;
+
+      h1 {
+        color: $white-color;
+        text-align: center;
+
+        margin-bottom: 30px;
+      }
+
+      p {
+        color: $white-color;
+
+        font-size: 16pt;
+        line-height: 1.6;
+
+        & + p {
+          margin-top: 32px;
+        }
+      }
+
+      @include respond-to(wide-screen) {
+        padding: 60px 0;
+
+        p {
+          width: 600px;
+          margin: 0 auto;
+        }
+      }
+
+      @include respond-to(tablet) {
+        p {
+          width: 100%;
+          padding: 0 30px;
+        }
+      }
+
+      @include respond-to(smartphone) {
+        p {
+          font-size: 14pt;
+
+          width: 100%;
+          padding: 0 20px;
+        }
+      }
+    }
+
+    &#forgotten {
+      .background {
+        background-size: cover;
+        background-image: url("/images/forgotten.jpg");
+
+        width: 100%;
+      }
+
+      .popup-box {
+        position: relative;
+
+        width: 100%;
+        padding: 40px 0;
+
+        background-color: rgba($white-color, 0.8);
+
+        h1 {
+          line-height: 60px;
+          text-align: center;
+        }
+
+        p {
+          color: $moegi-color;
+
+          font-size: 14pt;
+          line-height: 1.6;
+
+          & + p {
+            margin-top: 32px;
+          }
+        }
+      }
+
+      @include respond-to(wide-screen) {
+        height: 700px;
+
+        .background {
+          position: absolute;
+
+          top: 0;
+
+          height: 700px;
+        }
+
+        .popup-box {
+          position: absolute;
+          z-index: 20;
+
+          top: 136px;
+          left: 108px;
+
+          width: 436px;
+          height: 400px;
+
+          padding: 0 32px;
+
+          h1 {
+            line-height: 92px;
+          }
+        }
+      }
+
+      @include respond-to(tablet) {
+        .background {
+          height: 400px;
+        }
+
+        .popup-box {
+          p {
+            padding: 0 30px;
+          }
+        }
+      }
+
+      @include respond-to(smartphone) {
+        .background {
+          height: 300px;
+        }
+
+        .popup-box {
+          p {
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+
+    &#stumped-about {
+      background-color: white;
+      width: 100%;
+
+      #stumped-about-mama {
+        position: relative;
+
+        width: 100%;
+
+        background-size: cover;
+        background-position: bottom;
+        background-image: url("/images/stumped-about-mama.png");
+      }
+
+      .popup-box {
+        position: relative;
+
+        width: 100%;
+        padding: 40px 0;
+
+        background-color: rgba($moegi-color, 0.2);
+
+        h1 {
+          line-height: 92px;
+          text-align: center;
+        }
+
+        p {
+          color: $moegi-color;
+
+          font-size: 14pt;
+          line-height: 1.6;
+
+          & + p {
+            margin-top: 32px;
+          }
+        }
+      }
+
+      @include respond-to(wide-screen) {
+        height: 600px;
+
+        #stumped-about-mama {
+          position: absolute;
+
+          bottom: 0;
+          left: 152px;
+
+          width: 476px;
+          height: 392px;
+        }
+
+        .popup-box {
+          position: absolute;
+          z-index: 20;
+
+          top: 52px;
+          right: 54px;
+
+          width: 544px;
+          height: 358px;
+
+          padding: 0 32px;
+        }
+      }
+
+      @include respond-to(tablet) {
+        #stumped-about-mama {
+          position: absolute;
+
+          left: 0;
+          bottom: 0;
+
+          width: 260px;
+          height: 210px;
+        }
+
+        .popup-box {
+          margin-left: 280px;
+          padding-bottom: 60px;
+          width: auto;
+
+          p {
+            padding: 0 30px 0 20px;
+          }
+        }
+      }
+      @include respond-to(smartphone) {
+        #stumped-about-mama {
+          margin: 80px auto 0;
+
+          width: 250px;
+          height: 200px;
+        }
+
+        .popup-box {
+          padding-bottom: 60px;
+
+          p {
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+
+    &#wiped-out {
+      .background {
+        background-size: cover;
+        background-image: url("/images/wiped-out.jpg");
+
+        width: 100%;
+      }
+
+      .popup-box {
+        position: relative;
+
+        width: 100%;
+        padding: 40px 0;
+
+        background-color: rgba($white-color, 0.8);
+
+        h1 {
+          line-height: 92px;
+          text-align: center;
+        }
+
+        p {
+          color: $moegi-color;
+
+          font-size: 14pt;
+          line-height: 1.6;
+
+          & + p {
+            margin-top: 32px;
+          }
+        }
+      }
+
+      @include respond-to(wide-screen) {
+        height: 700px;
+
+        .background {
+          position: absolute;
+
+          top: 0;
+
+          height: 700px;
+        }
+
+        .popup-box {
+          position: absolute;
+          z-index: 20;
+
+          bottom: 52px;
+          left: 74px;
+
+          width: 636px;
+          height: 258px;
+
+          padding: 0 32px;
+        }
+      }
+
+      @include respond-to(tablet) {
+        padding-bottom: 60px;
+
+        .background {
+          height: 400px;
+        }
+
+        .popup-box {
+          p {
+            padding: 0 30px;
+          }
+        }
+      }
+
+      @include respond-to(smartphone) {
+        padding-bottom: 60px;
+
+        .background {
+          height: 300px;
+        }
+
+        .popup-box {
+          p {
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+
+    &#join-us {
+      padding-top: 60px;
+
+      h1 {
+        text-align: center;
+
+        margin-bottom: 46px;
+      }
+
+      > h2 {
+        text-align: center;
+        color: $moegi-color;
+        font-weight: 300;
+        font-size: 16pt;
+
+        margin-top: 72px;
+      }
+
+      p {
+        width: 100%;
+
+        color: $moegi-color;
+
+        font-size: 14pt;
+        line-height: 1.6;
+
+        & + p {
+          margin-top: 32px;
+        }
+      }
+
+      .links {
+        text-align: center;
+        margin: 36px 0;
+
+        img {
+          width: 240px;
+        }
+      }
+
+      .social-box {
+        @extend %clearfix;
+
+        #facebook-box {
+          width: 280px;
+        }
+
+        #twitter-box {
+          h2 {
+            color: $moegi-color;
+            font-size: 18pt;
+            font-weight: 300;
+
+            text-align: center;
+          }
+
+          ul.buttons {
+            text-align: center;
+            margin-top: 32px;
+
+            list-style-type: none;
+
+            li + li {
+              margin-top: 22px;
+            }
+          }
+        }
+      }
+
+      @include respond-to(wide-screen) {
+        p {
+          width: 600px;
+          margin: 0 auto;
+        }
+
+        .social-box {
+          width: 700px;
+          margin: 80px auto 0;
+
+          #facebook-box {
+            float: left;
+
+            width: 350px;
+          }
+
+          #twitter-box {
+            float: left;
+
+            width: 350px;
+          }
+        }
+      }
+
+      @include respond-to(tablet) {
+        border-top: 1px solid rgba($moegi-color, 0.2);
+
+        p {
+          padding: 0 30px;
+        }
+
+        .social-box {
+          width: auto;
+          margin: 40px auto 0;
+
+          #facebook-box {
+            margin: 0 auto;
+          }
+
+          #twitter-box {
+            margin-top: 36px;
+          }
+        }
+      }
+
+      @include respond-to(smartphone) {
+        border-top: 1px solid rgba($moegi-color, 0.2);
+
+        p {
+          padding: 0 20px;
+        }
+
+        .social-box {
+          width: auto;
+          margin: 40px auto 0;
+
+          #facebook-box {
+            margin: 0 auto;
+          }
+
+          #twitter-box {
+            margin-top: 36px;
+          }
+        }
+      }
+    }
+  }
+}
