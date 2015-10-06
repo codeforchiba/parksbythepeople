@@ -27,7 +27,7 @@
     }
 
     &#header {
-      background-image: url("/images/header.jpg");
+      background-image: url("../images/header.jpg");
       height: 300px;
 
       h1 {
@@ -127,7 +127,7 @@
     &#forgotten {
       .background {
         background-size: cover;
-        background-image: url("/images/forgotten.jpg");
+        background-image: url("../images/forgotten.jpg");
 
         width: 100%;
       }
@@ -222,7 +222,7 @@
 
         background-size: cover;
         background-position: bottom;
-        background-image: url("/images/stumped-about-mama.png");
+        background-image: url("../images/stumped-about-mama.png");
       }
 
       .popup-box {
@@ -319,7 +319,7 @@
     &#wiped-out {
       .background {
         background-size: cover;
-        background-image: url("/images/wiped-out.jpg");
+        background-image: url("../images/wiped-out.jpg");
 
         width: 100%;
       }
