@@ -434,6 +434,21 @@
         }
       }
 
+      .event-box {
+        h3 {
+          text-align: center;
+          font-weight: 300;
+          font-size: 15pt;
+        }
+
+        p {
+          &.supplement {
+            font-size: 12pt;
+            text-align: center;
+          }
+        }
+      }
+
       .links {
         text-align: center;
         margin: 36px 0;
