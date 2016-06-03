@@ -464,6 +464,10 @@
                   margin-top: 8px;
                 }
               }
+
+              & + li {
+                margin-top: 22px;
+              }
             }
           }
         }
